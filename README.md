@@ -20,7 +20,7 @@ docker compose -f docker-compose-vault.yaml up
 Notes:
 
 - `env_sync`: fetch all keys from secret uri
-- `env`: need to specify explicit key and correspond secret uri
+- `env`: need to specify explicit key and corresponding secret uri
 
 ```bash
 # init
