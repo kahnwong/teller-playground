@@ -1,0 +1,7 @@
+---
+project: teller-playground
+
+providers:
+  hashicorp_vault:
+    env_sync:                    # this grabs all the mapping from the keystore itself, JSON format.
+      path: secret/data/teller # has to be added under `secret` engine

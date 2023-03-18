@@ -1,0 +1,7 @@
+---
+project: teller-playground
+
+providers:
+  dotenv:
+    env_sync:
+      path: .env
