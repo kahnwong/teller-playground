@@ -10,7 +10,6 @@ In this example, `vault` and `dotenv` is used as secret backend.
 
 ```bash
 brew tap spectralops/tap && brew install teller
-docker compose -f docker-compose-vault.yaml up
 ```
 
 ## Usage
@@ -39,6 +38,8 @@ eval "$(teller sh)"
 with vault:
 
 ```bash
+docker compose -f docker-compose-vault.yaml up # then add secret keys via the web ui
+
 export VAULT_TOKEN="testtoken"
 export VAULT_ADDR="http://127.0.0.1:8200"
 
